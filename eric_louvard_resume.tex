@@ -21,6 +21,7 @@
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
+\footskip=12pt
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -48,6 +49,13 @@
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
+}
+
+\newcommand{\resumeSubheadingShort}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -84,22 +92,21 @@
 \section{Schulische und berufliche Ausbildung}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Abitur in 1991 mit den Hauptfächern Biologie/Mathematik/Physik}{St-Claude, Frankreich}
-      {Gymnasium}{1984 -- 1991}
-    \resumeSubheading
-      {DESS Génie Informatique Systèmes Distribués et Parallélismes}{Besançon, Frankreich}
+      {DESS Génie Informatique Systèmes Distribués et Parallélismes}{Besançon, Frankreich}
       % data processing engineering, distributed computing and parallel computing
       {Universität der Franche-Comté in Besançon Fachrichtung: Mathematik und Informatik}{1992 -- 1998}
-      \resumeSubheading
+    \resumeSubheading
+      {Abitur in 1991 mit den Hauptfächern Biologie/Mathematik/Physik}{St-Claude, Frankreich}
+      {Gymnasium}{1984 -- 1991}
+    \resumeSubheadingShort
       {Verschiedene Praktika}{Frankreich-Deutschland}
-      {}{1996 -- 1997}
       \resumeItemListStart
         \resumeItem{Fortran 77}
-          {Optimierung eines Programms in Fortran 77 durch Parallelisierung}
+          {Uni-Labor - Optimierung eines Programms in Fortran 77 zur Elektronenmikroskop Interpretation durch Parallelisierung}
         \resumeItem{C++}
           {Praktikum bei der IPA-Fraunhofer Gesellschaft - CAD Zeichnungen in 3D rendern}
         \resumeItem{Java}
-          {Programmieren eines Programms zur Anzeige von DXF-Dateien. Wurde in DMS integriert und produktiv eingesetzt}
+          {Hauk \& Sasko - Programmieren eines Programms zur Anzeige von DXF-Dateien. Wurde in DMS integriert und produktiv eingesetzt}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -108,7 +115,7 @@
 \section{Beruflicher Werdegang}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {easySoft GmbH}{Würtingen-Metzingen, Deutschland}
+      {easySoft. GmbH}{Würtingen-Metzingen, Deutschland}
       {Continuous Integration}{Apr 2014 - until now}
       \resumeItemListStart
         \resumeItem{Versionsverwaltung }
@@ -116,16 +123,15 @@
         \resumeItem{Setup}
           {Windows Installer/MSI/Advanced Installer}{Web Server (IIS) Konfiguration bei der Installation}
         \resumeItem{Continuous Integration}
-          {Jenkins/Powershell/Azure DevOps}{}
+          {Einführung, Erweiterung und Wartung vom Jenkins/Powershell/Azure DevOps}
         \resumeItem{Automatische Tests}
-          {Hyper-V/Sikulix/Azure}{Einführung von Automatischetest für Desktop Anwendungen}
-          {Docker/Selenium/Ranorex/Postman}{Einführung von Automatischetest für Web Anwendungen}
-        \resumeItem{Entwicklung}
-          {Microsoft/C\#/dotNet/dotNet-Core/Visual-Studio}
+          {Hyper-V/Sikulix/Azure/Ranorex/Docker/Selenium/Postman|Einführung von Automatischetest für Desktop Anwendungen und für Web Anwendungen}
+        \resumeItem{Entwicklung mit}
+          {Microsoft/C\#/dotNet/dotNet-Core/Visual-Studio/VS-Code/MSQL/MS-ACCESS}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Spontech Spine GmbH}{Stuttgart-Tübingen, Deutschland}
+      {Spontech Spine GmbH}{Tübingen-Stuttgart, Deutschland}
       {Senior Software Engineer - Research}{Aug 2009 - Mär 2014}
       \resumeItemListStart
         \resumeItem{Image recognition}
@@ -133,10 +139,11 @@
         \resumeItem{Verteilte Datenbank}
           {Cassandra/Java}{SQL - Driver für Cassandra für Datenanbindung im Cloud}
         \resumeItem{Anbindung im Krankenhaus System}
-          {Integration und Entwicklung mit Dcm4Che und Pixelmed}
-        \resumeItem{Entwicklung}
-          {Macos/Windows/Linux}{Nach Medizinesche Standard mit Polarion MedPack}
-          {Infrastruktur betreuung}{Subversion}
+          {Integration und Entwicklung vom Schnittselle zur PACS-Systeme mit Dcm4Che und Pixelmed}
+        \resumeItem{3D Visualisierung}
+          {Integration vom OpenInventor für Computertomographie Visualisierung}
+        \resumeItem{Entwicklung mit}
+          {Macos/Windows/Linux|Medizinesche Standard mit Polarion MedPackInfrastruktur betreuung|Eclipse/IntelliJ|Subversion|Obfuscation}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -156,7 +163,6 @@
           {C/Java/Linux/Windows}
           {Wartung und Erweiterungen eingebaut im Web-Basiert DMS (UKIS)}
       \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
 
@@ -165,6 +171,22 @@
   \resumeSubHeadingListStart
     \resumeSubItem{Blog}
       {Blogger/WordPress}
+  \resumeSubHeadingListEnd
+
+%-----------TOOLS-----------------
+\section{Tools}
+  \resumeSubHeadingListStart
+    \resumeSubItem{OS}
+      {Bei MacOS,Windows 10 oder Linux daheim}
+    \resumeSubItem{Virtualisierung}
+      {Hyper-V/Virtual Box/VMWare}
+  \resumeSubHeadingListEnd
+
+%-----------PATENT-----------------
+\section{Patent}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Mit Erfinder}
+      {Computer program for spine mobility simulation and spine simulation method}
   \resumeSubHeadingListEnd
 
 %
@@ -177,7 +199,5 @@
 %      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
 %    }
 %  \resumeSubHeadingListEnd
-
-
 %-------------------------------------------
 \end{document}
